@@ -1,5 +1,6 @@
 # Steps to Create a Chat on a Web Page Using an Ollama Model (In this case, the Llama 3.2 3B model), through a Docker Container:
-![Texto alternativo](chat_with_Ollama_pic.jpeg)
+![chat_with_Ollama_pic](https://github.com/user-attachments/assets/eccc0074-7f6e-40fd-8b10-7bc71e09fa22)
+
 
 **1-** Visit the Ollama Documentation: Visit the official Ollama website: https://ollama.com
 
@@ -107,4 +108,9 @@ python chat_app.py
 
 **15-** Open the Web Browser and Test the Chat:
 Open your browser and go to the web application, then test the chat by asking questions, for example, "Why is the sky blue?".
+
+![7](https://github.com/user-attachments/assets/15d497de-7d29-414b-92db-59edcc8fac82)
+![8](https://github.com/user-attachments/assets/3bacb801-c485-4689-87eb-fdabe1ec8290)
+![9](https://github.com/user-attachments/assets/c2650f9e-2fd7-4b70-8d45-b6f606912f2c)
+
 
