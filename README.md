@@ -1,19 +1,19 @@
 # Steps to Create a Chat on a Web Page Using an Ollama Model (In this case, the Llama 3.2 3B model), through a Docker Container:
 
-1- Visit the Ollama Documentation: Visit the official Ollama website: https://ollama.com
+**1-** Visit the Ollama Documentation: Visit the official Ollama website: https://ollama.com
 
-2- Install Docker: Install Docker on your system by following the installation guide for your operating system.
+**2-** Install Docker: Install Docker on your system by following the installation guide for your operating system.
 
-3- Go to Docker Hub (Ollama): Visit the Ollama Docker page on Docker Hub: https://hub.docker.com/r/ollama/ollama and read the documentation to download the image to Docker.
+**3-** Go to Docker Hub (Ollama): Visit the Ollama Docker page on Docker Hub: https://hub.docker.com/r/ollama/ollama and read the documentation to download the image to Docker.
 
-4- Download the Ollama Image: From the Docker terminal, you can run the following command to download the latest Ollama image:
+**4-** Download the Ollama Image: From the Docker terminal, you can run the following command to download the latest Ollama image:
 ```bash
 docker pull ollama/ollama
 ```  
 
-5- Run the Ollama Container: After downloading the Ollama image, the next step is to create and run a container using that image. The container is where the Ollama model will run.
+**5-** Run the Ollama Container: After downloading the Ollama image, the next step is to create and run a container using that image. The container is where the Ollama model will run.
 
-6- Steps to Run the Ollama Container:
+**6-** Steps to Run the Ollama Container:
 To start the Ollama container, execute the following command:
 ```bash
 docker run -d -p 11434:11434 --name Ollama ollama/ollama
@@ -26,28 +26,28 @@ docker run: Creates and runs a new container from an image.
 "--name Ollama": Names the container "Ollama".
 "ollama/ollama": Specifies the image to use to create the container.
 
-7- Verify the Container is Running:
+**7-** Verify the Container is Running:
 To confirm that the container was created and is running properly, use the command:
 ```bash
 docker ps
 ```
 The Ollama container should appear in the list of active containers.
 
-8- Download the Llama3.2 Model Inside the Container:
+**8-** Download the Llama3.2 Model Inside the Container:
 Now that the container is running, pull the Llama3.2 model into the container using the following command:
 ```bash
 docker exec -it Ollama ollama pull llama3.2
 ```
 This command downloads the Llama3.2 model (or another desired model) directly into the Ollama container.
 
-9- Verify if the Model Was Successfully Downloaded:
+**9-** Verify if the Model Was Successfully Downloaded:
 To confirm that the model was downloaded correctly, use the command:
 ```bash
 docker exec -it Ollama ollama list models
 ```
 This will display a list of available models, including Llama3.2.
 
-10- Open VS Code and Create a Folder (e.g., ‘chat_with_Ollama’)
+**10-** Open VS Code and Create a Folder (e.g., ‘chat_with_Ollama’)
 
 **app.py:**
 This Python script allows for a continuous conversation with the Llama model, where the user interacts with the model, and the responses are displayed in real-time via the terminal, until the user types "exit" or "quit" to stop.
@@ -73,7 +73,7 @@ HTML (HyperText Markup Language): For structuring the webpage content, such as t
 CSS (Cascading Style Sheets): For styling the page, defining colors, sizes, fonts, borders, and layout of elements (e.g., chatbox and input fields).
 JavaScript: For implementing interactive functionality, such as sending user messages to the backend via fetch, displaying the responses in the chatbox, and enabling automatic scrolling to the latest message.
 
-11- Prepare the Python Environment to Run Flask:
+**11-** Prepare the Python Environment to Run Flask:
 Activate the Python virtual environment (if using one):
 
 On Windows:
@@ -86,24 +86,24 @@ On macOS/Linux:
 source venv/bin/activate
 ```
 
-12- Install Dependencies:
+**12-** Install Dependencies:
 Ensure Flask and the Ollama library are installed in your Python environment:
 ```bash
 pip install Flask ollama
 ```
 
-13- Use the Command in VS Code Terminal to Interact with the Docker Container:
+**13-** Use the Command in VS Code Terminal to Interact with the Docker Container:
 To interact with the running Docker container and pull the Llama3.2 model:
 ```bash
 docker exec -it Ollama ollama pull llama3.2
 ```
 
-14- Run the chat_app.py Script:
+**14-** Run the chat_app.py Script:
 Execute the script by running:
 ```bash
 python chat_app.py
 ```
 
-15- Open the Web Browser and Test the Chat:
+**15-** Open the Web Browser and Test the Chat:
 Open your browser and go to the web application, then test the chat by asking questions, for example, "Why is the sky blue?".
 
