@@ -49,16 +49,16 @@ This will display a list of available models, including Llama3.2.
 
 10- Open VS Code and Create a Folder (e.g., ‘chat_with_Ollama’)
 
-app.py:
+**app.py:**
 This Python script allows for a continuous conversation with the Llama model, where the user interacts with the model, and the responses are displayed in real-time via the terminal, until the user types "exit" or "quit" to stop.
 
-main.py:
+**main.py:**
 This script sends a question to the Llama 3.2 model ("Why is the sky blue?") and prints the model's generated response.
 
-server.py:
+**server.py:**
 This script creates a Flask API that receives a prompt via POST, generates a response (simulated for now), and returns the generated text in JSON format.
 
-chat_app.py:
+**chat_app.py:**
 This file uses the following languages and libraries:
 Python: The primary language used for backend logic, handling HTTP requests, and interacting with the Ollama model.
 Flask: A micro web framework in Python, used to create the server and define HTTP routes. In chat_app.py, Flask is used to:
@@ -66,7 +66,7 @@ The / route renders the homepage (index.html).
 The /chat route receives user messages, interacts with the Ollama model, and sends the responses back to the frontend.
 JSON: Flask uses JSON format for data exchange between the backend and frontend. User messages are sent as JSON objects, and the model's response is also returned in JSON format. Summary: chat_app.py is a Python backend using Flask to create a web server that receives requests, interacts with the Ollama model, and sends responses back to the user interface.
 
-index.html:
+**index.html:**
 This file creates a simple chat interface where the user can send messages to the backend, and the model's responses are displayed in the chatbox, allowing continuous interaction with the Flask application.
 The following languages are used:
 HTML (HyperText Markup Language): For structuring the webpage content, such as the title, chatbox, message input field, and send button.
