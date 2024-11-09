@@ -7,7 +7,8 @@
 3- Go to Docker Hub (Ollama): Visit the Ollama Docker page on Docker Hub: https://hub.docker.com/r/ollama/ollama and read the documentation to download the image to Docker.
 
 4- Download the Ollama Image: From the Docker terminal, you can run the following command to download the latest Ollama image:
-'docker pull ollama/ollama'
+```bash
+docker pull ollama/ollama
 
 5- Run the Ollama Container: After downloading the Ollama image, the next step is to create and run a container using that image. The container is where the Ollama model will run.
 
