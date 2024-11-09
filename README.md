@@ -1,5 +1,5 @@
 # Steps to Create a Chat on a Web Page Using an Ollama Model (In this case, the Llama 3.2 3B model), through a Docker Container:
-![Texto alternativo](C:\Users\User\Desktop\ETIC ALGARVE\Aulas\Projetos\chat_with_Ollama\images\chat_with_Ollama_pic.jpeg)
+![Texto alternativo](chat_with_Ollama\images\chat_with_Ollama_pic.jpeg)
 
 **1-** Visit the Ollama Documentation: Visit the official Ollama website: https://ollama.com
 
