@@ -109,26 +109,27 @@ python chat_app.py
 **15-** Open the Web Browser and Test the Chat:
 Open your browser and go to the web application, then test the chat by asking questions, for example, "Why is the sky blue?".
 
-**Notes:** 
+
+## Notes:
 Model: Llama 3.2 (3B)
-Parameters: 3 billion
-Size: 2.0GB	
-Hardware Requirements:
-CPU: Multicore processor
-RAM: Minimum of 16 GB recommended
-GPU	NVIDIA RTX series (for optimal performance), at least 8 GB VRAM
-Storage	Disk Space: Sufficient for model files 
+- Parameters: 3 billion
+- Size: 2.0GB	
+- Hardware Requirements:
+  - CPU: Multicore processor
+  - RAM: Minimum of 16 GB recommended
+  - GPU	NVIDIA RTX series (for optimal performance), at least 8 GB VRAM
+  - Storage	Disk Space: Sufficient for model files 
 
 Model: Llama 3.2 (1B)
-Parameters:	1 billion	
-Size: 1.3GB	
-Hardware Requirements:
-CPU: Multicore processor
-RAM: Minimum of 16 GB recommended
-GPU	NVIDIA RTX series (for optimal performance), at least 4 GB VRAM
-Storage	Disk Space: Sufficient for model files 
+- Parameters:	1 billion	
+- Size: 1.3GB	
+- Hardware Requirements:
+  - CPU: Multicore processor
+  - RAM: Minimum of 16 GB recommended
+  - GPU	NVIDIA RTX series (for optimal performance), at least 4 GB VRAM
+  - Storage	Disk Space: Sufficient for model files 
 
-For this case I run the Llama 3.2 3B model on a machine with an Intel Core i7-6700HQ and 8GB of RAM, which is under the recommended specifications for optimal performance. While the model may still work, the response from the chat is very slow.
+For this case I run the Llama 3.2 3B model on a machine with an Intel Core i7-6700HQ and 8GB of RAM, which is under the recommended specifications for optimal performance. While the model may still work, the response from the chat was very slow.
 
 ![7](https://github.com/user-attachments/assets/15d497de-7d29-414b-92db-59edcc8fac82)
 ![8](https://github.com/user-attachments/assets/3bacb801-c485-4689-87eb-fdabe1ec8290)
